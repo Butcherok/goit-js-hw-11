@@ -18,3 +18,21 @@
 // downloads - кількість завантажень.
 
 // Якщо бекенд повертає порожній масив. У такому разі показуй повідомлення з текстом "Sorry, there are no images matching your search query. Please try again.".
+'use strict';
+
+function getImagesList(searchup) {
+    const options = {
+        key: "33641734-f7d46c14b35bfa5eb977d9e1a",
+        q: `${searchup}`,
+        image_type: "photo",
+        orientation: "horizontal",
+        safesearch: true,
+    };
+    const url = `https://pixabay.com/api/?key=${options.key}&image_type=${options.image_type}&q=${options.q}&orientation=${options.orientation}&safesearch =${options.safesearch}`;
+
+    return axios
+    .get(url)
+    .catch()
+}
+
+export default getImagesList;
