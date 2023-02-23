@@ -74,7 +74,7 @@ async function fetchImages() {
             Notiflix.Notify.info("We're sorry, but you've reached the end of search results.");
             loadMoreBtn.hide()
         } else if(galleryWrapper.childElementCount <= 40) {
-            Notiflix.Notify.info(`${totalHits} images found.`);
+            Notiflix.Notify.info(`Hooray! We found ${totalHits} images.`);
         } 
 
         const { height: cardHeight } = document
