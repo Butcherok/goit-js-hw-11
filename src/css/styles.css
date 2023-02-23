@@ -131,7 +131,7 @@ color : #2f3640;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-auto-rows: 340px;
   grid-gap: 12px;
-  grid-auto-columns: ;
+  grid-auto-columns: auto;
   justify-items: center;
   margin-left: auto;
   margin-right: auto;
