@@ -7,6 +7,7 @@
     <title>Homework 11</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body>
@@ -19,7 +20,7 @@
           autocomplete="off"
           placeholder="Search images..."
         />
-        <button class="search-btn" type="submit">
+        <button class="query-btn" id="queryBtn" type="submit">
           <i class="material-icons">
             search
         </i></button>
@@ -29,7 +30,9 @@
     <div class="gallery">
       <!-- Картки зображень -->
     </div>
-    
+
+    <button type="button" class="more-btn" id="moreBtn" disabled>Load more</button>
+
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="index.js" type="module"></script>
   </body>
